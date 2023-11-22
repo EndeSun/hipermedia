@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+    <div class="formulario">
+        <p class="campos">Usuario: <input type="text" id="user"></p>
+        <span id="errorUsuario">El campo usuario es requerido</span>
+        <p>Contraseña: <input type="password" id="password"></p>
+        <span class="campos" id="errorPassword">El password debe tener al menos 3 caracteres</span>
+        <button onclick=" validar() ">Entrar</button>
+
+    </div>
+    </div>
+    <script src="formulario.js"></script>
+</body>
+</html>

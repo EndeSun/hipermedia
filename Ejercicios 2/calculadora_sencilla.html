@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora sencilla</title>
+    <style>
+        #botones{
+            display: flex;
+        }
+        #botones button{
+            margin: 0.5em
+        }
+    </style>
+</head>
+<body>
+    <p>Operando 1:<input type="text" name="num1" id="num1"></p>
+    <p>Operando 2:<input type="text" name="num2" id="num2"></p>
+
+    <p id="resultado"></p>
+
+    <div id="botones">
+    <button onclick="sumar()">Suma</button>
+    <button onclick="restar()">Resta</button>
+    <button onclick="multiplicar()">Multiplicación</button>
+    <button onclick="dividir()">División</button>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>

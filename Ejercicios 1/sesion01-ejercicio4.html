@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var canvas = document.getElementById('myCanvas'); // TODO: OBTENER CANVAS USANDO SU ID 'myCanvas'
+            if (!canvas || !canvas.getContext) {
+                return;
+            }
+
+            var context = canvas.getContext('2d'); // TODO: OBTENER EL CONTEXTO 2D DEL CANVAS
+            if (!context) {
+                return;
+            }
+
+            context.fillStyle = 'blue'; // TODO: DEFINIR COLOR AZUL
+            context.strokeStyle = 'red'; // TODO: DEFINIR COLOR ROJO
+            context.lineWidth = 2; // TODO: DEFINIR GROSOR
+
+            // RECTÁNGULOS
+            context.fillRect(0, 0, 150, 50); // TODO: DIBUJAR RECTÁNGULO RELLENO
+            context.strokeRect(0, 60, 150, 50); // TODO: DIBUJAR RECTÁNGULO USANDO BORDE
+
+            // DIBUJAR PATH
+            context.beginPath(); // TODO: INICIAR TRAZO
+            context.moveTo(160, 0); // TODO: COORDENADAS DEL PRIMER PUNTO
+            context.lineTo(270, 0); // TODO: COORDENADAS DEL SEGUNDO PUNTO
+            context.lineTo(160, 110); // TODO: COORDENADAS DEL TERCER PUNTO
+            context.lineTo(160, 0); // TODO: COORDENADAS DEL ÚLTIMO PUNTO
+            context.fill(); // TODO: RELLENAR TRAZO
+            context.closePath(); // TODO: CERRAR TRAZO
+        }
+    </script>
+</head>
+<body>
+
+    <canvas id="myCanvas" width="360" height="240"></canvas> <!-- TODO: INSTANCIAR ELEMENTO CANVAS "myCanvas" -->
+
+</body>
+</html>

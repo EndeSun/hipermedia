@@ -1,0 +1,60 @@
+body{
+    background-color: gray;
+}
+.formulario{
+    width: 400px;
+    background-color: #ccc;
+    border: 2px solid silver;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    border-radius: 0.5em;
+}
+p {
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    padding-right: 7em; /* Espacio entre los inputs */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+input{
+    margin-left: 1em;
+    border-radius: 0.2em;
+}
+
+input:focus{
+    border-color: rgb(253, 145, 5);
+    outline: 0 none
+}
+button{
+    padding: 0.5em 2em 0.5em 2em;
+    margin-right: 3.5em;
+    margin-top: 1em;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+#errorUsuario, #errorPassword{
+    color:red;
+    font-size: x-small;
+    display: none;
+}
+#errorUsuario{
+    position: absolute;
+    margin-top: 4.5em;
+    margin-right: 2em;
+}
+#errorPassword{
+    position: absolute;
+    margin-top: 10em;
+    margin-left: 4em;
+}
+
+.formulario{
+    position: relative;
+}
