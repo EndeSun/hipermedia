@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+    <title>Media queries</title>
+    <style>
+
+        /* Para antes de sm */
+        @media (max-width: 576px) { 
+            .header{
+                background-color:coral;
+                text-align: center;
+            }
+            .d1{
+                text-align: left;
+            }
+            .d2{
+                text-align: center;
+                background-color: aqua;
+            }
+            .d3{
+                background-color: red;
+                text-align: end;
+            }
+            .f1,.f2{
+                text-align: center
+            }
+
+
+         }
+        /* Para sm en adelante */
+        @media (min-width: 576px) { 
+            .header{
+                background-color: aqua;
+                text-align: left;
+            }
+            .d2{
+                background-color: red;
+                text-align: end;
+            }
+            .d3{
+                background-color: green;
+                text-align: center;
+            }
+            .f1,.f2{
+                text-align: center
+            }
+         }
+
+        /* Para md en adelante */
+        @media (min-width: 768px) { 
+            .header{
+                background-color: green;
+            }
+            .d1{
+                text-align: center;
+            }
+            .d2{
+                text-align: center;
+            }
+            .d3{
+                background-color: red;
+            }
+            
+            .f1{
+                text-align: end;
+            }
+            .f2{
+                text-align: left;
+            }
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="header">Header</header>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 d1 bg-danger">1</div>
+            <div class="col-12 col-sm-6 col-md-4 d2">2</div>
+            <div class="col-12 col-md-4 d3">3</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-md-6 bg-warning f1">Footer 1</div>
+            <div class="col-12 col-md-6 bg-warning f2">Footer 2</div>
+        </div>
+    </div>
+</body>
+</html>
