@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+
     <title>Maquetación de componentes</title>
+    <style>
+        main {
+            flex: 1; /* Ocupa el espacio disponible */
+          }
+        footer{
+            background-color: rgb(170, 169, 169);
+            flex-shrink: 0; /* No se encogerá */
+            text-align: center;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Mínimo alto de la ventana */
+          }
+          header{
+            background-color: blue;
+            color: white;
+            height: 3em;
+            display: flex;
+            
+          }
+          header > a{
+            border: 1px solid white;
+            border-radius: 4px;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+            margin: 0.5em;
+            text-decoration: none;
+            color: white;
+          }
+          header > p {
+            margin-top: 0.5em;
+          }
+
+          .card-body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <a href="2.3_maquetacion.html"><</a>
+        <p>Mas información</p>
+    </header>
+
+    <main class="container">
+        <div class="card mx-auto">
+            <h1 class="text-left">Título</h1>
+
+            <p class="card-text">Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto </p>
+
+            <p class="card-text">Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto </p>
+            
+            <img src="imagenEj3.png" class="card-img-top" alt="imagenEj3.png">
+            <div class="card-body">
+                <a href="2.3_maquetacion.html" class="btn btn-secondary text-center">< Volver</a> 
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Acciones
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Guardar favorito</a></li>
+                      <li><a class="dropdown-item" href="#">Exportar a PDF</a></li>
+                      <li><a class="dropdown-item" href="#">Imprimir</a></li>
+                      <li><a class="dropdown-item" href="#">Compartir</a></li>
+                    </ul>
+                  </div>
+            </div>
+    </main>
+
+    <footer>
+        Pie de página
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
