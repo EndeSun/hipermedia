@@ -10,26 +10,63 @@
     crossorigin="anonymous"
   />
     <title>Offset y ordenación</title>
+    <style>
+        header,footer{
+            margin: 0;
+            background-color: rgb(6, 241, 6);
+        }
+        .row{margin:0;}
+
+        .warning{background-color: rgb(238, 148, 23);}
+
+        .disp{
+            background-color: aqua;
+        }
+        .info{
+            background-color:rgb(97, 146, 220) ;
+        }
+        .secondary{
+            background-color: rgb(184, 182, 182);
+        }
+    </style>
+
 </head>
 <body>
-    <header class="bg-success text-center">header</header>
 
     <main class="container">
+        <header class="text-center header_custom">header</header>
+
         <div class="row">
-            
+            <div class="info col-6 col-sm-3 text-center offset-md-3">1</div>
+            <div class="info col-6 col-sm-3 text-center">2</div>
+            <div class="col-md-3 d-none d-md-block "></div>
+            <div class="info col-6 col-sm-3 text-center">3</div>
+            <div class="info col-6 col-sm-3 text-center offset-md-6">4</div>
+        </div>
+
+        <div class="row">
+            <div class="disp col-12 d-none d-sm-block d-md-none text-center">Tablet</div>
+        </div>
+
+        <div class="row">
+            <div class="secondary col-6 col-sm-3 text-center order-md-4">a</div>
+            <div class="secondary col-6 col-sm-3 text-center order-md-3">b</div>
+            <div class="secondary col-6 col-sm-3 text-center order-md-2">c</div>
+            <div class="secondary col-6 col-sm-3 text-center order-md-1">d</div>
         </div>
         <div class="row">
-            <div class="bg-primary col-12 d-sm-none text-center">Mobile</div>
+            <div class="disp col-12 d-sm-none text-center">Mobile</div>
         </div>
         <div class="row">
-            <div class="bg-primary col-12 d-none d-md-block text-center">Desktop</div>
+            <div class="disp col-12 d-none d-md-block text-center">Desktop</div>
         </div>
         <div class="row">
-            <div class="bg-warning col-12 col-sm-6 col-md-3 text-center order-md-2">:D</div>
-            <div class="bg-warning d-none d-sm-block col-sm-6 col-md-3 text-center offset-md-3 order-md-1">:(</div>
+            <div class="warning col-12 col-sm-6 col-md-3 text-center order-md-2">:D</div>
+            <div class="warning d-none d-sm-block col-sm-6 col-md-3 text-center offset-md-3 order-md-1">:(</div>
         </div>
+        <footer class="text-center d-none d-sm-block">footer</footer>
     </main>
 
-    <footer class="bg-success text-center d-none d-sm-block">footer</footer>
+
 </body>
 </html>

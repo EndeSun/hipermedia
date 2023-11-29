@@ -20,6 +20,7 @@
             }
             .d1{
                 text-align: left;
+                background-color: red;
             }
             .d2{
                 text-align: center;
@@ -30,7 +31,8 @@
                 text-align: end;
             }
             .f1,.f2{
-                text-align: center
+                text-align: center;
+                background-color: yellow;
             }
 
 
@@ -41,23 +43,28 @@
                 background-color: aqua;
                 text-align: left;
             }
+            .d1{
+                text-align: left;
+                background-color: red;
+            }
             .d2{
                 background-color: red;
                 text-align: end;
             }
             .d3{
-                background-color: green;
+                background-color: rgb(6, 223, 6);
                 text-align: center;
             }
             .f1,.f2{
-                text-align: center
+                text-align: center;
+                background-color: yellow;
             }
          }
 
         /* Para md en adelante */
         @media (min-width: 768px) { 
             .header{
-                background-color: green;
+                background-color: rgb(6, 223, 6);
             }
             .d1{
                 text-align: center;
@@ -86,15 +93,15 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 d1 bg-danger">1</div>
+            <div class="col-12 col-sm-6 col-md-4 d1">1</div>
             <div class="col-12 col-sm-6 col-md-4 d2">2</div>
             <div class="col-12 col-md-4 d3">3</div>
         </div>
 
 
         <div class="row">
-            <div class="col-12 col-md-6 bg-warning f1">Footer 1</div>
-            <div class="col-12 col-md-6 bg-warning f2">Footer 2</div>
+            <div class="col-12 col-md-6 f1">Footer 1</div>
+            <div class="col-12 col-md-6 f2">Footer 2</div>
         </div>
     </div>
 </body>
