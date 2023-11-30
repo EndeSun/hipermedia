@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web responsive</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="custom.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="2.4_web_responsive.html">
+          <img src="../logo.png" alt="Logo png" width="80" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="2.4_web_responsive.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <section class="formulario">
+            <form>
+                <div class="row mb-3">
+                    <label class="col-sm-6 col-form-label">Nombre y Apellidos</label>
+                    <div class="col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Pepe"
+                      />
+                    </div>
+                  </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-6 col-form-label">Email</label>
+                  <div class="col-sm-6">
+                    <input type="email" class="form-control" placeholder="example@gmail.com" />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-6 col-form-label">Provincia</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" placeholder="Alicante" />
+                    </div>
+                  </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-6 col-form-label">Ciudad</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" placeholder="Alicante" />
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label class="col-sm-6 col-form-label">Calle</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" placeholder="Calle ejemplo, 1" />
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label class="col-sm-6 col-form-label">Código Postal</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" placeholder="03690" />
+                    </div>
+                  </div>
+
+                <div class="row mb-3">
+                    <div class="dropdown">
+                        <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Estado civil
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-item">Soltero/a</a></li>
+                          <li class="dropdown-item">Casado/a</a></li>
+                          <li class="dropdown-item">Viudo/a</a></li>
+                        </ul>
+                      </div>
+                  </div>
+
+                  <button class="btn btn-outline-success boton-solicitud"><a class="links" href="2.4_web_responsive.html">Enviar solicitud</a></button>
+              </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="redes-sociales">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-github fa-2xl"></i>
+          <i class="fa-brands fa-google fa-2xl"></i>
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </section>
+  
+        <section class="politica">
+          <a href="aviso.html"><p>Aviso legal</p></a>
+        </section>
+        
+      </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
